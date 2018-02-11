@@ -1,6 +1,8 @@
 // Style files in the pods folder are automatically loaded in.
 @import 'pod-styles';
+@import './variables';
 @import './nav';
+@import './main';
 
 .ember-application {
   margin: 0;

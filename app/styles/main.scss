@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-skyblue;
+  main {
+    flex: 1;
+  }
+  aside {
+    background-color: $color-white;
+    width: 200px;
+  }
+}
