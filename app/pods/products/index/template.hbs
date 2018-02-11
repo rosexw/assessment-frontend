@@ -1,7 +1,10 @@
-<h3>Product Page - Index - {{publisher.title}}</h3>
+<nav>
+  <h3>Product Page - Index - {{publisher.title}}</h3>
+</nav>
 
+<main>
 {{#each products as |product|}}
-  <h4>{{link-to product.name 'products.show' product.id}}</h4>
+  <h4>{{product.name}} {{link-to "EXPAND" 'products.show' product.id}}</h4>
 
   <table>
     {{#each product.productDataSubset as |data|}}
@@ -13,5 +16,10 @@
     {{/each}}
   </table>
 {{/each}}
+</main>
+
+<aside>
+
+</aside>
 
 {{outlet}}
