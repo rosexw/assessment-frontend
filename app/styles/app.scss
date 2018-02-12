@@ -6,4 +6,46 @@
 
 .ember-application {
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.primary-button, .input-tables-field > input {
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.input-tables-field{
+  position: relative;
+  display: flex;
+  & > input {
+    border-color: $color-bostonblue;
+    color: $color-lightteal;
+    padding: 5px;
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: left;
+  }
+  & > .input-icon {
+    color: $color-bostonblue;
+    position: absolute;
+    right: 10px;
+    top: 28px;
+  }
+}
+
+.primary-button {
+  background-color: $color-bostonblue;
+  color: $color-white;
+  padding: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: 'Quantico', sans-serif;
 }

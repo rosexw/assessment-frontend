@@ -21,7 +21,18 @@
   </main>
 
   <aside>
-    ASIDE
+    <button id = "button-title">Commercial Data</button>
+    <h5>Data Overview</h5>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+    <table>
+      {{#publisher-info title="Delivery Frequency" value=publisher.deliveryFrequency}}{{/publisher-info}}
+      {{#publisher-info title="Data Frequency" value=publisher.dataFrequency}}{{/publisher-info}}
+      {{#publisher-info title="Reporting Lag" value=publisher.reportingLag}}{{/publisher-info}}
+      {{#publisher-info title="History" value=publisher.history}}{{/publisher-info}}
+      {{#publisher-info title="Coverage" value=publisher.coverage}}{{/publisher-info}}
+    </table>
+    <span class="input-tables-field">{{input value="Tables API"}} <i class="fas fa-info-circle input-icon"></i></span>
+    <button class="primary-button">Pricing</button>
   </aside>
 </div>
 
