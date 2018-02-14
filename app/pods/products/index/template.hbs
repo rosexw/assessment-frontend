@@ -4,7 +4,7 @@
 
 <div class="container">
   <main>
-    <h2>Product Page - Layout</h2>
+    <h2 class="main-title">Datasets in This Data Product</h2>
     {{#each products as |product|}}
       <h4>{{product.name}} {{link-to "EXPAND" 'products.show' product.id}}</h4>
 
@@ -22,8 +22,8 @@
 
   <aside>
     <button id = "button-title">Commercial Data</button>
-    <h5>Data Overview</h5>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+    <h5 class="aside-title">Data Overview</h5>
+    <p class="aside-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
     <table>
       {{#publisher-info title="Delivery Frequency" value=publisher.deliveryFrequency}}{{/publisher-info}}
       {{#publisher-info title="Data Frequency" value=publisher.dataFrequency}}{{/publisher-info}}
