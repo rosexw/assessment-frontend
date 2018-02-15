@@ -11,16 +11,35 @@
           <table>
             <tr>
               <th>m_ticker</th>
-              <th>company</th>
-              <th>date</th>
+              <th>ticker</th>
+              <th>comp_name</th>
+              <th>comp_name_2</th>
+              <th>exchange</th>
+              <th>currency_code</th>
+              <th>per_end_date</th>
+              <th>per_type</th>
+              <th>per_code</th>
+              <th>per_fisc_year</th>
+              <th>per_fisc_qtr</th>
             </tr>
             {{#each product.productDataSubset as |data|}}
               <tr>
+                <td>{{data.m_ticker}}</td>
                 <td>{{data.ticker}}</td>
                 <td>{{data.comp_name}}</td>
+                <td>{{data.comp_name_2}}</td>
+                <td>{{data.exchange}}</td>
+                <td>{{data.currency_code}}</td>
                 <td>{{data.per_end_date}}</td>
+                <td>{{data.per_type}}</td>
+                <td>{{data.per_code}}</td>
+                <td>{{data.per_fisc_year}}</td>
+                <td>{{data.per_fisc_qtr}}</td>
               </tr>
             {{/each}}
+            <th class="sample-rows">
+              Sample Rows
+            </th>
           </table>
         </div>
         {{/each}}
