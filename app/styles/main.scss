@@ -8,6 +8,10 @@
   }
   main {
     flex: 1;
+
+    td:first-child {
+      padding-left: 50px;
+    }
   }
 }
 
@@ -64,9 +68,6 @@ table {
     text-align: left;
     background-color: $color-white;
     border-bottom: 1px solid $color-lightestgray;
-  }
-  td:first-child {
-    padding-left: 50px;
   }
   .sample-rows {
     width: 100%;
