@@ -4,24 +4,30 @@
 
 <div class="container">
   <main>
-    <h2 class="main-title">Datasets in This Data Product</h2>
-    {{#each products as |product|}}
-      <h4>{{product.name}} {{link-to "EXPAND" 'products.show' product.id}}</h4>
-
-      <table>
-        {{#each product.productDataSubset as |data|}}
-          <tr>
-            <td>{{data.ticker}}</td>
-            <td>{{data.comp_name}}</td>
-            <td>{{data.per_end_date}}</td>
-          </tr>
+      <h2 class="main-title">Datasets in This Data Product</h2>
+      {{#each products as |product|}}
+        <div class="dataset">
+          <h4 class="product-name">{{product.name}} {{link-to "EXPAND" 'products.show' product.id}}</h4>
+          <table>
+            <tr>
+              <th>m_ticker</th>
+              <th>company</th>
+              <th>date</th>
+            </tr>
+            {{#each product.productDataSubset as |data|}}
+              <tr>
+                <td>{{data.ticker}}</td>
+                <td>{{data.comp_name}}</td>
+                <td>{{data.per_end_date}}</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
         {{/each}}
-      </table>
-    {{/each}}
   </main>
 
   <aside>
-    <button id = "button-title">Commercial Data</button>
+    <button class = "button-title">Commercial Data</button>
     <h5 class="aside-title">Data Overview</h5>
     <p class="aside-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
     <table>

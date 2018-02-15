@@ -4,31 +4,38 @@
   background-color: $color-skyblue;
   main {
     flex: 1;
-  }
-  aside {
-    background-color: $color-white;
-    width: 400px;
-    padding: 20px;
-    border-left: 1px solid $color-lightgray;
 
-    .publisher-info-title {
+    .main-title {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-family: $font-quantico;
+      font-weight: 200;
+    }
 
+    .dataset {
+      border: 1px solid $color-lightgray;
+      margin: 20px;
     }
-    .publisher-info-value {
-      text-align: right;
-    }
-    .publisher-info-icon {
 
-    }
-    td {
+    .product-name {
+      font-size: 1.2rem;
+      font-family: $font-quantico;
+      color: $color-deepcyan;
+      background-color: $color-white;
+      margin: 0;
+      padding: 20px;
       border-bottom: 1px solid $color-lightgray;
-      padding-bottom: 20px;
-    }
-    tr:last-child td {
-      border-bottom: none;
-    }
-    table {
-      border-spacing: 0 20px;
+
+      a {
+        float: right;
+        color: $color-bostonblue;
+        text-decoration: none;
+
+        &:visited, &:hover, &:active {
+          border-bottom: 1px solid $color-bostonblue;
+
+        }
+      }
     }
   }
 }
