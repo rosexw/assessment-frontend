@@ -11,8 +11,8 @@
 
 <h3 class="product-name">Dataset Name</h3>
 <span class="tabs">
-  <div class="tab tab-active">Data Sample</div>
-  <div class="tab">Coverage</div>
+  <div class="tab tab-active" {{action "tab"}}>Data Sample</div>
+  <div class="tab" {{action "tab"}}>Coverage</div>
 </span>
 
 <div class="container">
@@ -59,7 +59,7 @@
           <td>{{data.rev_type_desc}}</td>
         </tr>
       {{/each}}
-      <th class="sample-rows">
+      <th class="sample-rows" colspan="2">
         Sample Rows
       </th>
     </table>

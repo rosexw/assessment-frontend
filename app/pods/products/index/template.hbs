@@ -10,15 +10,15 @@
 <nav>
     <div class="first-nav">
       <span class="first-nav__left">
-        <div class="menu-button"><i class="fas fa-bars"></i></div>
-        <div class="tab">Alternative Data</div>
-        <div class="tab tab-active">Core Financial Data</div>
+        <div class="menu-button" {{action "menu"}}><i class="fas fa-bars"></i></div>
+        <div class="tab" {{action "tab"}}>Alternative Data</div>
+        <div class="tab tab-active" {{action "tab"}}>Core Financial Data</div>
       </span>
-      <span class="first-nav__middle"><img src = 'assets/quandl-logo.svg'></span>
+      <span class="first-nav__middle" {{action "logo"}}><img src = 'assets/quandl-logo.svg'></span>
       <span class="first-nav__right">
-        <div class="tab">Docs & Help</div>
-        <div class="tab">Blog</div>
-        <div class="tab">Sign In</div>
+        <div class="tab" {{action "tab"}}>Docs & Help</div>
+        <div class="tab" {{action "tab"}}>Blog</div>
+        <div class="tab" {{action "tab"}}>Sign In</div>
       </span>
     </div>
     <div class="second-nav">
@@ -71,7 +71,7 @@
   </main>
 
   <aside>
-    <button class = "button-title">Commercial Data</button>
+    <button class = "button-title" {{action "commercial"}}>Commercial Data</button>
     <h5 class="aside-title">Data Overview</h5>
     <p class="aside-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
     <table>
@@ -82,7 +82,7 @@
       {{#publisher-info title="Coverage" value=publisher.coverage}}{{/publisher-info}}
     </table>
     <span class="input-tables-field" >{{input value="Tables API"}} <i class="fas fa-info-circle input-icon"></i></span>
-    <button class="primary-button" {{action "select" post on="mouseUp"}}>Pricing</button>
+    <button class="primary-button" {{action "pricing"}}>Pricing</button>
   </aside>
 </div>
 
